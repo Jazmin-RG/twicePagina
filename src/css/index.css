@@ -2,10 +2,10 @@
 :root{
     --texto:'Alike',serif;
 
-    --titulo:40px;
-    --subtitulo:30px;
-    --cuerpo:20px;
-    --anotacion:5px;
+    --titulo:4.2rem;
+    --subtitulo:1.8rem;
+    --cuerpo:1rem;
+    --anotacion:.5rem;
 
     --arena:#F4EBE6;
     --azul:#CFE1F5;
@@ -24,32 +24,39 @@
     text-decoration: none;
 }
 /*Navbar*/
-h3{
+.navbar{
+    font-size:var(--subtitulo);
     color:var(--blanco);
     background-color:var(--negro);
     padding: 20px;
     width: 100%;
+    text-align: center;
 }
 /*Titulo*/
+.title{
+    text-align: center;
+}
+
 h1{
+    font-size:var(--titulo);
     color:var(--rosa);
 }
+
+.tour{
+    font-size:var(--subtitulo);
+    color:#F58FB3;
+}
 /*Cards*/
+.cards{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:repeat(7,1fr);
+    gap: 10px;
+}
+.color{
+    background-color:var(--arena);
+    height:19rem;
+    width: 14rem;
+}
 /*Galeria*/
 /*Footer*/
-
-html{
-    font-size:10px;
-}
-.cuadrado{
-    width: 30rem;
-    height: 30rem;
-    background-color: #FF5FA2;
-    font-size: 20px;
-}
-
-.rojo{
-    background-color: crimson;
-    width: 1em;
-    height:1em;
-}
