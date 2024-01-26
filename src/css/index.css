@@ -23,13 +23,18 @@
     padding: 0;
     text-decoration: none;
 }
+.container{
+    width:100%;
+    max-width:1300px;
+    margin:0 auto ;
+}
 /*Navbar*/
 .navbar{
     font-size:var(--subtitulo);
     color:var(--blanco);
     background-color:var(--negro);
-    padding: 20px;
     width: 100%;
+    padding:20px 0;
     text-align: center;
 }
 /*Titulo*/
@@ -49,9 +54,14 @@ h1{
 /*Cards*/
 .cards{
     display:grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows:repeat(7,1fr);
+    grid-template-columns:repeat(auto-fill, minmax(224px, 1fr));
     gap: 10px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .color{
     background-color:var(--arena);
