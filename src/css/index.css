@@ -23,6 +23,10 @@
     padding: 0;
     text-decoration: none;
 }
+body{
+    background: rgb(207,225,245);
+background: linear-gradient(124deg, rgba(207,225,245,1) 21%, rgba(254,220,236,1) 44%, rgba(254,221,236,1) 62%, rgba(255,249,245,1) 86%);
+}
 .container{
     width:100%;
     max-width:1300px;
@@ -67,6 +71,11 @@ h1{
     background-color:var(--arena);
     height:19rem;
     width: 14rem;
+    border-radius: 20px;
+    border:var(--negro) 2px solid;
+}
+svg{
+    margin:10px 0;
 }
 /*Galeria*/
 /*Footer*/
